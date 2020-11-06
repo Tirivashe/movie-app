@@ -2,10 +2,14 @@ import { makeStyles } from '@material-ui/core'
 
 export const useStyles = makeStyles(theme => ({
   root: {
-    marginTop: "5rem",
+    marginTop: "1rem",
     padding: "2rem",
     width: "100%",
     height: "100%"
+  },
+
+  loader: {
+    marginTop: "20%"
   },
 
   pagination: {

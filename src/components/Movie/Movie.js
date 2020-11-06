@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardMedia, CardContent, CardActionArea, Typography } from '@material-ui/core'
+import { Card, CardContent, CardActionArea, Typography } from '@material-ui/core'
 import { useStyles } from './styles'
 
 function Movie({ movie }) {
