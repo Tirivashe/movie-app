@@ -1,6 +1,7 @@
 import React from 'react'
-import Header from './components/Header'
-import MovieList from './components/MovieList'
+import Header from './components/Header/Header'
+import MovieList from './components/MovieList/MovieList'
+import './App.css'
 
 function App() {
 
