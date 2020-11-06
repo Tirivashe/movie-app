@@ -4,7 +4,7 @@ import { useStyles } from './styles'
 
 function Movie({ movie }) {
 
-  const modifiedMovie = { ...movie, image: `https://image.tmdb.org/t/p/w500${movie.backdrop_path}` }
+  const modifiedMovie = { ...movie, image: `https://image.tmdb.org/t/p/w500${movie.poster_path ? movie.poster_path: movie.backdrop_path}` }
   const classes = useStyles()
 
   return (
