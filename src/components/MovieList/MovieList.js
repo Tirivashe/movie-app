@@ -11,13 +11,13 @@ function MovieList() {
   console.log(totalPages)
 
   return (
-    <Grid className={ classes.root } container alignItems="center" spacing={4}>
+    <Grid className={ classes.root } container justify="center" alignItems="center" spacing={3}>
       { typeof movies.results !== "undefined" && movies.results.map(movie => {
-        return <Grid xs={12} md={4} key={movie.id} item>
+        return <Grid xs={12} md={3} key={movie.id} item>
                 <Movie movie={movie}/>
               </Grid>
       })}
-      { totalPages && <Pagination onChange={handlePageChange} page={currentPage} count={totalPages} hideNextButton={currentPage === totalPages} hidePrevButton={ currentPage === 1 }/>}
+      { totalPages && <Pagination size="large" className={classes.pagination} color="primary" onChange={handlePageChange} page={currentPage} count={totalPages} hideNextButton={currentPage === totalPages} hidePrevButton={ currentPage === 1 }/>}
     </Grid>
   )
 }
