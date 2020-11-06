@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStyles } from './styles'
 import { useMovieContext } from '../../context/MovieContext'
-import { AppBar, Toolbar, Typography, Grid, Button } from '@material-ui/core'
+import { AppBar, Toolbar, Button } from '@material-ui/core'
 
 function Header() {
   const { getMovies } = useMovieContext()
