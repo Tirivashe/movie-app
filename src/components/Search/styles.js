@@ -8,8 +8,7 @@ export const useStyles = makeStyles(theme => ({
   },
 
   textField: {
-    '&:active': {
-      border: "none"
-    }
+   backgroundColor: '#fff',
+   color: "#fff"
   }
 }))
