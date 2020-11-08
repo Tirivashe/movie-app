@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardContent, CardActionArea, Typography } from '@material-ui/core'
+import { Card, CardContent, CardActionArea, Typography, CardMedia } from '@material-ui/core'
 import { useStyles } from './styles'
 
 function Movie({ movie }) {
@@ -8,13 +8,13 @@ function Movie({ movie }) {
   const classes = useStyles()
 
   return (
-    <Card>
+    <Card className={classes.card}>
       <CardActionArea>
-        <img className={classes.image} src={modifiedMovie.image} alt="poster"/>
+        <CardMedia className={classes.image} image={modifiedMovie.image} alt="poster"/>
+        <CardContent>
+          <Typography>{modifiedMovie.title}</Typography>
+        </CardContent>
       </CardActionArea>
-      <CardContent>
-        <Typography>{modifiedMovie.title}</Typography>
-      </CardContent>
     </Card>
   )
 }
