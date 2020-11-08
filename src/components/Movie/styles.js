@@ -6,6 +6,15 @@ export const useStyles = makeStyles(theme => ({
   },
 
   image: {
+    height: 700,
     width: "100%",
+    
+  },
+
+  card: {
+    transition: "transform 0.25s ease-out",
+    '&:hover':{
+      transform: "scale(1.05)"
+    }
   }
 }))
