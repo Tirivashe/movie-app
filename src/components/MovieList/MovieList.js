@@ -16,10 +16,10 @@ function MovieList() {
     <>
       <Header />
       <SearchBar />
-      <Grid className={ classes.root } container justify="center" alignItems="center" spacing={3}>
+      <Grid className={ classes.root } container justify="center" alignItems="center" spacing={5}>
         { typeof movies.results !== "undefined" && movies.results.map(movie => {
           return <Grid xs={12} md={3} key={movie.id} item>
-                  <Link to={`/${movie.id}`} >
+                  <Link className={classes.links} to={`/${movie.id}`} >
                     <Movie movie={movie}/>
                   </Link>
                 </Grid>
