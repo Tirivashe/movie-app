@@ -46,7 +46,7 @@ function MovieDetails() {
             Genres
             <Grid item container alignItems="center">
               {typeof movie.genres !== "undefined" && movie.genres.map(genre => (
-                <Chip label={genre.name} color="primary"/>
+                <Grid item component={Chip} label={genre.name} color="primary"/>
               ))}
             </Grid>
           </Grid>
