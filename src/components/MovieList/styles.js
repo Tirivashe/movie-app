@@ -12,6 +12,10 @@ export const useStyles = makeStyles(theme => ({
     marginTop: "20%"
   },
 
+  links: {
+    textDecoration: "none"
+  },
+
   pagination: {
     marginTop: "3rem",
     marginBottom: "1rem",
