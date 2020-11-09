@@ -44,7 +44,6 @@ export function MovieProvider({ children }) {
       const data = await res.json()
       setMovies(data)
       setTotalPages(data.total_pages)
-      console.log(data)
     } catch (error) {
       console.log(error)
     }

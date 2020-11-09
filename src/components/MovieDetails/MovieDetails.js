@@ -10,7 +10,6 @@ function MovieDetails() {
 
   const image = `https://image.tmdb.org/t/p/w500${movie.poster_path ? movie.poster_path: movie.backdrop_path}`
 
-  console.log(movie)
 
   const fetchSingleMovie = async url => {
     try {

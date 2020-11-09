@@ -7,7 +7,6 @@ import { useMovieContext } from '../../context/MovieContext'
 function SearchBar() {
   const classes = useStyles()
   const { query, searchMovies } = useMovieContext()
-  console.log(query)
 
   return (
     <form className={classes.form} noValidate autoComplete="off">

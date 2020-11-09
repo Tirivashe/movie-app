@@ -25,9 +25,3 @@ function Header() {
 }
 
 export default Header
-
-
-// <Link onClick={()=> getMovies("popular")} className={classes.link} underline="none" component="button" variant="h5">Popular</Link>
-//             <Link onClick={()=> getMovies("top_rated")} className={classes.link} underline="none" component="button" variant="h5">Top Rated</Link>
-//             <Link onClick={()=> getMovies("upcoming")} className={classes.link} underline="none" component="button" variant="h5">Upcoming</Link>
-//             <Link onClick={()=> getMovies("now_playing")} className={classes.link} underline="none" component="button" variant="h5">Now Playing</Link>
