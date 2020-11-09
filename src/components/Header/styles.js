@@ -17,30 +17,23 @@ export const useStyles = makeStyles(theme => ({
      backgroundColor: "#522A85",
      fontWeight: "bold"
    },
-
-   link: {
-     color: "#E73DEB",
-     fontFamily: "Nunito",
-     fontSize: "1rem",
-     backgroundColor:"#522A85",
-     '&:hover':{
-       backgroundColor:"#522A85"
-     }
-   },
    
    headerContainer: {
-     display: "flex",
-     justifyContent: "space-between",
-     alignItems: "center",
      width: "100%",
-     height: "100%",
-     padding: "0 2rem"
+     height: "100%"
    },
 
    link_container: {
-     display: "flex",
-     alignItems: "center",
-     justifyContent: "space-between",
-     width: "40%"
+     width: "40%",
+     height: "100%"
+   },
+
+   link: {
+    color: "#E73DEB",
+    height: "100%",
+    fontFamily: "Nunito",
+    fontSize: "1.2rem",
+    backgroundColor:"#522A85",
+    padding: "0.5rem 0",
    }
 }))

@@ -1,6 +1,7 @@
 import React from 'react'
 import { TextField } from '@material-ui/core'
-import { useStyles } from './styles'
+import { ThemeProvider } from '@material-ui/styles'
+import { useStyles, theme } from './styles'
 import { useMovieContext } from '../../context/MovieContext'
 
 function SearchBar() {
@@ -10,7 +11,9 @@ function SearchBar() {
 
   return (
     <form className={classes.form} noValidate autoComplete="off">
-      <TextField onChange={searchMovies} value={query} className={classes.textField} id="outlined-basic" label="Search" fullWidth variant="outlined" />
+      <ThemeProvider theme={theme}>
+        <TextField onChange={searchMovies} value={query} className={classes.textField} id="outlined-basic" label="Search" fullWidth variant="outlined" />
+      </ThemeProvider>
     </form>
   )
 }
