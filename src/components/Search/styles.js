@@ -1,5 +1,4 @@
 import { makeStyles, createMuiTheme } from '@material-ui/core/styles'
-import { colors } from '@material-ui/core';
 
 export const useStyles = makeStyles(theme => ({
   form: {
