@@ -24,7 +24,20 @@ function MovieList() {
                   </Link>
                 </Grid>
         })}
-        { !totalPages ? <CircularProgress className={classes.loader} color="secondary" size={90}/> : <Pagination size="large" className={classes.pagination} color="primary" onChange={handlePageChange} page={currentPage} count={totalPages} hideNextButton={currentPage === totalPages} hidePrevButton={ currentPage === 1 }/>}
+        { !totalPages ? 
+          <CircularProgress className={classes.loader} color="secondary" size={90}/> 
+          : 
+          <Pagination 
+            size="large" 
+            className={classes.pagination} 
+            color="primary" 
+            onChange={handlePageChange} 
+            page={currentPage} 
+            count={totalPages} 
+            hideNextButton={currentPage === totalPages} 
+            hidePrevButton={ currentPage === 1 }
+          />
+        }
       </Grid>
     </>
   )
